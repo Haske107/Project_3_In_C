@@ -32,7 +32,7 @@ public:
         }
     }
 
- void doWork()    {
+    void doWork()    {
         for (int i = 0; i < 1000; ++i) {
             matrix[rand()%999][rand()%999]
             = matrix[rand()%999][rand()%999] * 5.2323223586654321;

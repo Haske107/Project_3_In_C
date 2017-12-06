@@ -23,7 +23,7 @@ public:
 
     void run() {
         for (int i = 0; i < Iterations; ++i) {
-            Semaphore.tryAcquire();
+            Semaphore.wait();
             for(int j = 0; j < 160 / Iterations; ++j)    {
                 doWork();
                 Worker_Counter.incrementAndGet();
